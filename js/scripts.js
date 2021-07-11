@@ -105,7 +105,11 @@ const gameStart = () => {
   });
 
   downArrowBtn.addEventListener('click', () => {
-    gridSize -= 1;
+    if(gridSize <= 1) {
+      gridSize = 1;
+    } else {
+      gridSize -= 1;
+    }
     removeGrid();
     createGrid(gridSize, gridSize);
     colorGrids(userSelectedPalette);
