@@ -1,0 +1,226 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  /* background-color: #6a5acd; */
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 705px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* INFO SECTION */
+
+.info-section {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.info-section ul {
+  margin-bottom: 20px;
+}
+
+.info-section ul li {
+  margin-bottom: 5px;
+}
+
+.info-section ul li span {
+  display: inline-block;
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
+
+.arrow-left {
+  transform: rotate(-90deg);
+}
+
+.arrow-right {
+  transform: rotate(90deg);
+}
+
+.info-section .info-section-btn {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #e8e8e8;
+  background-color: #5e5f63;
+  border-radius: 50%;
+}
+
+.color-red {
+  color: #ef1805;
+}
+
+/* GAMEBOY */
+
+.gameboy-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.gameboy-wrapper svg {
+  width: 100%;
+  height: 700px;
+}
+
+#gameboy-screen {
+  width: 231.41px;
+  height: 200.80px;
+  position: absolute;
+  top: 10.8%;
+  left: 33.7%;
+  background-color: #759d79;
+  opacity: 0;
+}
+
+.on #gameboy-screen {
+  opacity: 1;
+}
+
+#grid {
+  position: absolute;
+  top: 10.8%;
+  left: 33.7%;
+  width: 231.41px;
+  height: 200.80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.grid-item {
+  border: 1px solid #333;
+}
+
+.on #grid {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.gameboy-btn {
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.power-light {
+  filter: grayscale(1);
+}
+
+.on .power-light {
+  filter: none;
+}
+
+.light-fill {
+  fill: #e8e8e8;
+}
+
+.dark-fill {
+  fill: #e2e2e2;
+  /* fill: #a9a9a9; */
+}
+
+.light-stroke {
+  stroke: #e8e8e8;
+}
+
+.dark-stroke {
+  stroke: #a9a9a9;
+}
+
+.side-buttons,
+.gameboy-bottom-btns,
+.comm-text {
+  filter: brightness(90%);
+}
+
+.a-btn-left-shadow,
+.a-btn-right-shadow,
+.b-btn-shadow {
+  fill: rgba(188, 188, 188, 20%);
+}
+
+#select-btn {
+  width: 49px;
+  height: 27px;
+  top: 79.2%;
+  left: 42%;
+}
+
+#start-btn {
+  width: 49px;
+  height: 27px;
+  top: 79.2%;
+  left: 51%;
+}
+
+.on #start-btn {
+  display: none;
+}
+
+#a-btn {
+  width: 55px;
+  height: 55px;
+  right: 26.3%;
+  top: 59.3%;
+}
+
+#b-btn {
+  width: 55px;
+  height: 55px;
+  right: 36%;
+  top: 62.5%;
+}
+
+#up-arrow-btn {
+  width: 30px;
+  height: 30px;
+  left: 31.2%;
+  top: 58.2%;
+}
+
+#right-arrow-btn {
+  width: 30px;
+  height: 30px;
+  left: 36%;
+  top: 62.6%;
+}
+
+#down-arrow-btn {
+  width: 30px;
+  height: 30px;
+  left: 31.2%;
+  top: 67%;
+}
+
+#left-arrow-btn {
+  width: 30px;
+  height: 30px;
+  left: 26.6%;
+  top: 62.7%;
+}
