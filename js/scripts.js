@@ -119,11 +119,11 @@ const gameStart = () => {
     const gameboyColors = [
       ['#e8e8e8', '#e2e2e2'],
       ['#5436a3', '#4c2a9a'],
-      ['#fdbdbb', '#edb4b5'],
+      ['#fdbdbb', '#f3bab8'],
       ['#f19a19', '#e69318'],
       ['#208597', '#007f9d'],
-      ['#fd405d', '#fc5675'],
-      ['#a5e713', '#92d120'],
+      ['#fd405d', '#f33f5b'],
+      ['#a5e713', '#9fde14'],
     ];
 
     if(userSelectedGameboyColor > (gameboyColors.length - 1)) {
